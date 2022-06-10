@@ -1,22 +1,29 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Description: Prints Main with _putchar
+ *
+ * Return: always 0
  */
 
 int main(void)
-{
-	int i;
-	char word[] = "_putchar\n";
-	int len = strlen(word);
 
-	for (i = 0; i < len; i++)
+{
+
+	int i = 0;
+
+	char c;
+
+	char s[] = "_putchar\n";
+
+	while (i <= 9)
+
 	{
-		_putchar(word[i]);
+		c = s[i];
+		_putchar(c);
+		i++;
 	}
 	return (0);
 }
