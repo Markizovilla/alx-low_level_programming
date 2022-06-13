@@ -9,26 +9,16 @@
 int main(void)
 
 {
+	int i = 0;
+	char c;
+	char s[] = "_putchar\n";
 
-	char h[] = "_putchar";
-
-	int m;
-
-	m = 0;
-
-
-	while (m <= 8)
-
+	while (i <= 9)
 	{
-
-		_putchar(h[m]);
-
-		m++;
-
+		c = s[i];
+		_putchar (c);
+		i++;
 	}
-	
-	_putchar('\n');
-
 	return (0);
 
 }
